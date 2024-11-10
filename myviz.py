@@ -3,8 +3,9 @@
 
 #Below is an example of a Python function that processes image files in a specified directory. This function uses the Pillow library to open and manipulate the images.
 
+import ollama
 import os
-from PIL import Image
+#from PIL import Image
 
 def process_images(directory, output_directory=None):
     """
@@ -29,7 +30,7 @@ def process_images(directory, output_directory=None):
             image_path = os.path.join(directory, filename)
 
             try:
-                # Open the image using Pillow
+                # Open the image using llama3.2-vision
                 with Image.open(image_path) as img:
                     # Process the image here (e.g., resize, apply filters, etc.)
                     # For demonstration purposes, we'll just convert it to grayscale
