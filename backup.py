@@ -5,7 +5,7 @@ response = ollama.chat(
     messages=[{
         'role': 'user',
         'content': 'What is in this image?',
-        'images': ['bridy.jpg'] ['bridy.jpg']
+        'images': ['bridy.jpg']
     }]
 )
 
